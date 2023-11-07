@@ -13,7 +13,7 @@ class TableModel(QtCore.QAbstractTableModel):
     def __init__(self, data):
         super(TableModel, self).__init__()
         self._data = data
-        print(self._data)
+
 
     def data(self, index, role):
         # the values in numpy.ndarray are stored in a special format (np.int8, np.int16, etc.)
